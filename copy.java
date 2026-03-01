@@ -104,22 +104,6 @@ class SE {
       System.out.println("_____________________________________________________________");
       System.out.printf("%d             %s             %d            %d      \n",id1, employee1, salary1, working1);
       System.out.printf("%d              %s             %d             %d      \n",id2, employee2, salary2, working2);
-      System.out.printf("%d              %s              %d             %d      \n",id3, employee3, salary2, working3);
-      
-
-
-
-
- 
-
-                               
-
-
-     
-     
-
-      
-
-      
+      System.out.printf("%d              %s              %d             %d      \n",id3, employee3, salary2, working3);   
 }
 }
