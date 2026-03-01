@@ -1,0 +1,125 @@
+import java.util.*;
+class SE {    
+    public static void main(String[] args) {
+      Scanner abc = new Scanner(System.in);
+
+      System.out.println("Patient Account Number");
+      int number1=abc.nextInt();
+      abc.nextLine();
+      // System.out.println(number1);
+      System.out.println("Admission Date");
+      String admission=abc.nextLine();
+      // System.out.println(admission);
+      System.out.println("Discharge Date");
+      String discharge=abc.nextLine();
+      // System.out.println(discharge);
+      System.out.println("Patient Name");
+      String patientName=abc.nextLine();
+      // System.out.println(patientName);
+      System.out.println("Diagnosis");
+      String diagnosis=abc.nextLine();
+      // System.out.println(diagnosis);
+      System.out.println("_________________________________");
+      System.out.println("Bill Issue Date");
+      String issueDate=abc.nextLine();
+      // System.out.println(issueDate);
+      System.out.println("Bill Issue Day");
+      String issueDay=abc.nextLine();
+      // System.out.println(issueDay); String medicine1=abc.nextLine();    
+      System.out.println("________________________________________________");
+      System.out.println("              Enter Medicine 01 Detail          ");
+      System.out.print("Enter Medicine 1 name: ");
+      String name1=abc.nextLine();
+      System.out.print("Enter Medicine 1 code: ");
+      int code1=abc.nextInt();
+      System.out.print("Enter Medicine 1 price: ");
+      int price1=abc.nextInt();
+      abc.nextLine();
+      float discount1 = price1*0.1f;
+      System.out.println(discount1);
+      System.out.println("________________________________________________");
+      System.out.println("              Enter Medicine 02 Detail          ");
+      System.out.print("Enter Medicine 2 name: ");
+      String name2=abc.nextLine();
+      System.out.print("Enter Medicine 2 code: ");
+      int code2=abc.nextInt();
+      System.out.print("Enter Medicine 2 price: ");
+      int price2=abc.nextInt();
+      float discount2 = price2*0.1f;
+      System.out.println(discount2);
+      abc.nextLine();
+      System.out.println("_________________________________________________");
+      System.out.println("            Enter Medicine 03 Detail             ");
+      System.out.print("Enter Medicine 3 name: ");
+      String name3=abc.nextLine();
+      System.out.print("Enter Medicine 3 code: ");
+      int code3=abc.nextInt();
+      System.out.print("Enter Medicine 3 price: ");
+      int price3=abc.nextInt();
+      float discount3 = price3*0.1f;
+      System.out.println(discount3);
+      System.out.println("_____________________________________________________________");
+      System.out.println("Medicine           Code           Price           Finalprice");
+      System.out.println("_____________________________________________________________");
+      System.out.printf("%s             %d            %d           %f      \n",name1, code1, price1, discount1);
+      System.out.printf("%s             %d             %d           %f      \n",name2, code2, price2, discount2);
+      System.out.printf("%s             %d              %d           %f      \n",name3, code3, price2, discount3);
+      System.out.println("_____________________________________________________________");
+      System.out.println("                 Employee 01 Detail                          ");
+      System.out.println("_____________________________________________________________");
+      System.out.print("Enter Employee ID: ");
+      int id1=abc.nextInt();
+      System.out.println("Enter Employee Name: ");
+      String employee1=abc.next();
+      System.out.println("Enter Employee Salary: ");
+      int salary1=abc.nextInt();
+      System.out.println("Working Days: ");
+      int working1=abc.nextInt();
+      System.out.println("_____________________________________________________________");
+      System.out.println("                      Employee 02 Detail                     ");
+      System.out.println("_____________________________________________________________");
+      System.out.print("Enter Employee ID: ");
+      int id2=abc.nextInt();
+      System.out.println("Enter Employee Name: ");
+      String employee2=abc.next();
+      System.out.println("Enter Employee Salary: ");
+      int salary2=abc.nextInt();
+      System.out.println("Working Days: ");
+      int working2=abc.nextInt();
+       System.out.println("____________________________________________________________");
+      System.out.println("                      Employee 03 Detail                     ");
+      System.out.println("_____________________________________________________________");
+      System.out.print("Enter Employee ID: ");
+      int id3=abc.nextInt();
+      System.out.println("Enter Employee Name: ");
+      String employee3=abc.next();
+      System.out.println("Enter Employee Salary: ");
+      int salary3=abc.nextInt();
+      abc.nextLine();
+      System.out.println("Working Days: ");
+      int working3=abc.nextInt();
+      abc.nextLine();
+      System.out.println("_____________________________________________________________");
+      System.out.println("Employee ID        Name           Salary         Working Days");
+      System.out.println("_____________________________________________________________");
+      System.out.printf("%d             %s             %d            %d      \n",id1, employee1, salary1, working1);
+      System.out.printf("%d              %s             %d             %d      \n",id2, employee2, salary2, working2);
+      System.out.printf("%d              %s              %d             %d      \n",id3, employee3, salary2, working3);
+      
+
+
+
+
+ 
+
+                               
+
+
+     
+     
+
+      
+
+      
+}
+}
