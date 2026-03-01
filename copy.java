@@ -1,5 +1,5 @@
 import java.util.*;
-class SE {    
+class copy {    
     public static void main(String[] args) {
       Scanner abc = new Scanner(System.in);
 
