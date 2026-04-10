@@ -13,14 +13,14 @@ class copy {
       int password=abc.nextInt();
       System.out.println("________________________________");
       if(pass==password){
+        char ans;
+        do{
           System.out.println("Welcome to Al Shifa Pharmacy"); 
-          while(choice!=4){
           System.out.println("________________________________");
           System.out.println("Menue");
           System.out.println("1.Patient Detail");
           System.out.println("2.Medicines Detail and Bill");
           System.out.println("3.Employees Detail");
-          System.out.println("4.Exit");
           System.out.println("________________________________");
           System.out.print("Enter your choice:");
           choice=abc.nextInt();
@@ -149,11 +149,11 @@ class copy {
           System.out.printf("%-20d%-20s%-20s%-20f%-20f%-20f \n",id1, employee1, address1, working1,salaryperday1,salarypermonth1);
           System.out.printf("%-20d%-20s%-20s%-20f%-20f%-20f\n",id2, employee2, address2, working2,salaryperday2,salarypermonth2);
           System.out.printf("%-20d%-20s%-20s%-20f%-20f%-20f\n",id3, employee3, address3, working3,salaryperday3,salarypermonth3); 
-          }else if(choice==4){
-          System.out.println("Thanks");
           }
-          
-        }
+          System.out.println("If you wanna see the menu again press y");
+          ans=abc.next().charAt(0);
+        } while(ans=='y');
+        
       }
       else if(pass!=password){
          System.out.println("Invalid password");
