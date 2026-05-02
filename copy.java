@@ -1,5 +1,18 @@
 import java.util.*;
-class copy {    
+class copy {  
+    public static int Total(int price1,int price2,int price3){
+       int Total =price1 + price2 + price3;
+          return Total;    
+    }  
+    public static float salaryperday(float workingperhour,float salaryperhour){
+        float salaryperday=workingperhour*salaryperhour;
+        return salaryperday;
+    }
+    public static float salarypermonth(float salaryperday) {
+      float salarypermonth=salaryperday*30;
+      return salarypermonth;
+    }
+
     public static void main(String[] args) {
       Scanner abc = new Scanner(System.in);
       System.out.println("                                            .....Al Shifa Pharmacy....                                ");
@@ -73,12 +86,12 @@ class copy {
           System.out.println("_______________________________________________________");
           System.out.println("Medicine                Code                Price      ");
           System.out.println("_______________________________________________________");
-          System.out.printf("%-25s%-20d%-15d        \n",name1, code1, price1);
-          System.out.printf("%-25s%-20d%-15d        \n",name2, code2, price2);
-          System.out.printf("%-25s%-20d%-15d        \n",name3, code3, price3);
+          System.out.printf("%-25s%-20d%-15d%n",name1, code1, price1);
+          System.out.printf("%-25s%-20d%-15d%n",name2, code2, price2);
+          System.out.printf("%-25s%-20d%-15d%n",name3, code3, price3);
           System.out.println("-------------------------------------------------------");  
-          int Total =price1 + price2 + price3;
-          System.out.println("                                         TOTAL PRICE= "+Total);
+          int total=Total(price1,price2,price3);
+          System.out.println("                                         TOTAL PRICE= "+total);
           }else if(choice==3){
           System.out.println("*************************************************************");
           System.out.println("                   Employees Detail                          ");
@@ -94,14 +107,14 @@ class copy {
           System.out.print("Enter Employee Address: ");
           String address1=abc.nextLine();
           System.out.print("Working Hours per day: ");
-          double working1=abc.nextDouble();
+          float working1=abc.nextDouble();
           abc.nextLine();
           System.out.print("Salary per Hour: ");
-          double perhour1=abc.nextDouble();
+          float perhour1=abc.nextDouble();
           abc.nextLine();
-          double salaryperday1=working1*perhour1;
+          float salaryperday1 = salaryperday(working1,perhour1);
           System.out.print("Salary per day: "+salaryperday1);
-          double salarypermonth1=salaryperday1*30;
+          float salarypermonth1=salarypermonth(salaryperday1);
           System.out.println("Salary per month: "+salarypermonth1);
           System.out.println("_____________________________________________________________");
           System.out.println("                      Employee 02 Detail                     ");
@@ -114,14 +127,14 @@ class copy {
           System.out.print("Enter Employee Address: ");
           String address2=abc.nextLine();
           System.out.print("Working Hours per day: ");
-          double working2=abc.nextDouble();
+          float working2=abc.nextDouble();
           abc.nextLine();
           System.out.print("Salary per Hour: ");
-          double perhour2=abc.nextDouble();
+          float perhour2=abc.nextDouble();
           abc.nextLine();
-          double salaryperday2=working2*perhour2;
+          float salaryperday2 = salaryperday(working2,perhour2);
           System.out.println("Salary per day: "+salaryperday2); 
-          double salarypermonth2=salaryperday2*30;
+          float salarypermonth2=salarypermonth(salaryperday2);
           System.out.println("Salary per month: "+salarypermonth2);
           System.out.println("____________________________________________________________");
           System.out.println("                      Employee 03 Detail                     ");
@@ -134,21 +147,21 @@ class copy {
           System.out.print("Enter Employee Address: ");
           String address3=abc.nextLine();
           System.out.print("Working Hours per day: ");
-          double working3=abc.nextDouble();
+          float working3=abc.nextDouble();
           abc.nextLine();
           System.out.print("Salary per Hour: ");
-          double perhour3=abc.nextDouble();
+          float perhour3=abc.nextDouble();
           abc.nextLine();
-          double salaryperday3=working3*perhour3;
+          float salaryperday3 = salaryperday(working3,perhour3);
           System.out.println("Salary per day: "+salaryperday3);
-          double salarypermonth3=salaryperday3*30;
+          float salarypermonth3=salarypermonth(salaryperday3);
           System.out.println("Salary per month: "+salarypermonth3);
           System.out.println("__________________________________________________________________________________________________________________");
           System.out.println("Employee ID        Name             Address             Working Hours/Day        Salary/Day         Salary/Month  ");
           System.out.println("__________________________________________________________________________________________________________________");
-          System.out.printf("%-20d%-20s%-20s%-20f%-20f%-20f \n",id1, employee1, address1, working1,salaryperday1,salarypermonth1);
-          System.out.printf("%-20d%-20s%-20s%-20f%-20f%-20f\n",id2, employee2, address2, working2,salaryperday2,salarypermonth2);
-          System.out.printf("%-20d%-20s%-20s%-20f%-20f%-20f\n",id3, employee3, address3, working3,salaryperday3,salarypermonth3); 
+          System.out.printf("%-20d%-20s%-20s%-20.2f%-20.2f%-20.2f%n",id1, employee1, address1, working1,salaryperday1,salarypermonth1);
+          System.out.printf("%-20d%-20s%-20s%-20.2f%-20.2f%-20.2f%n",id2, employee2, address2, working2,salaryperday2,salarypermonth2);
+          System.out.printf("%-20d%-20s%-20s%-20.2f%-20.2f%-20.2f%n",id3, employee3, address3, working3,salaryperday3,salarypermonth3); 
           }
           System.out.println("If you wanna see the menu again press y");
           ans=abc.next().charAt(0);
